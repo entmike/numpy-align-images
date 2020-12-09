@@ -11,5 +11,5 @@ docker run -it --rm -v $PWD/in:/in -v $PWD/aligned:/aligned entmike/align-images
 Run GPU:
 
 ```bash
-docker run -it --rm -v $PWD/in:/in -v $PWD/aligned:/aligned entmike/align-images:gpu
+docker run -it --rm --gpus=all -v $PWD/in:/in -v $PWD/aligned:/aligned entmike/align-images:gpu
 ```
