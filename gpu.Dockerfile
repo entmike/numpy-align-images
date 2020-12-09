@@ -1,5 +1,7 @@
 FROM datmo/keras-tensorflow:gpu-py35
 
+RUN pip install dlib
+
 ADD models /models
 ADD app /app
 
